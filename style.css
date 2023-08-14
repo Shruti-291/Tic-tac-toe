@@ -1,0 +1,123 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(19, 43,116) ;
+    color: white;
+    height: 10vh;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav ul{
+    list-style: none;
+}
+h1{
+    text-align: center;
+    margin: 25px;
+    font-size: 50px;
+}
+body{
+    background-color: rgb(200, 241, 245);
+}
+.gameContainer{
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+    min-height: calc(100vh - 10vh - 10vh);
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family: 'Roboto Slab', serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 6vw;
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box:hover{
+    background-color: rgb(247, 189, 186) ;
+}
+
+.info{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.gameInfo{
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 18px;
+}
+h1{
+    color: rgb(240, 104, 19);
+    font-weight: 800;
+}
+.imgbox img{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin: 0 24px;
+    padding : 6px 14px;
+    background: rgb(243, 243, 113);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Baloo Bhaina 2', cursive; 
+    font-weight: bolder;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 500px){
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .gameInfo .info{
+        font-size: 1.5rem;
+    }
+    #reset{
+        font-size: 0.8rem;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+    .container .boxtext{
+        font-size: 30px;
+    }
+}
